@@ -188,6 +188,9 @@ body{
 .grid--3-cols{
     grid-template-columns: repeat(3,1fr);
 }
+.grid--4-cols{
+    grid-template-columns: repeat(4,1fr);
+}
 
 .grid--center--v{
     align-items: center;
@@ -432,4 +435,140 @@ strong{
 .meals:hover{
     transform: translateY(-1.2rem);
     box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.section-testimonials{
+    background-color: #fdf2e9;
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    align-items: center;
+}
+
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+    column-gap: 6rem;
+}
+
+.testimonial-container{
+    padding: 9rem;
+}
+
+.testimonial-img{
+    width: 5.8rem;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+}
+
+.testimonial-text{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 1rem;
+}
+
+.testimonial-name{
+    font-size: 1rem;
+    color: #6f6f6f;
+}
+
+.gallery-item img{
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery-item{
+    overflow: hidden;
+}
+.gallery-item img:hover{
+    transform: scale(1.1);
+}
+
+.section-pricing{
+    padding: 9rem 0;
+}
+
+.plan-name{
+    color: #cf711f;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    margin-bottom: 2.4rem;
+}
+
+.plan-price{
+    font-size: 5.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.plan-text{
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #6f6f6f;
+}
+
+.plan-header{
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
+
+.plan-price span{
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-right: 0.4rem;
+}
+
+.plan-sign-up{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.pricing-plan{
+    border-radius: 11px;
+    padding: 4rem;
+    width: 75%;
+}
+
+.pricing-plan--starter{
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+}
+
+.pricing-plan--complete{
+    background-color: #fdf2e9;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan--complete::after{
+    content: "Best value";
+    position: absolute;
+    text-transform: uppercase;
+    font: 1rem;
+    font-weight: 700;
+    top: 6%;
+    right: -16%;
+    background-color: #ffd43b;
+    color: #333;
+    padding: 0.6rem 6rem;
+    transform: rotate(45deg);
+}
+
+.grid:last-child{
+    margin-bottom: 0;
+}
+
+.grid:not(last-child){
+    margin-bottom: 8.6rem;
 }
