@@ -405,7 +405,7 @@ strong{
 }
 
 .margin-bottom-md{
-    margin-bottom: 4rem;
+    margin-bottom: 4rem !important;
 }
 
 .all-recipies{
@@ -571,4 +571,32 @@ strong{
 
 .grid:not(last-child){
     margin-bottom: 8.6rem;
+}
+
+.feature-icon{
+    color: #e67e22;
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-bottom: 2.4rem;
+    background-color: #fdf2e9;
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+
+.feature-title{
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.feature-text{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.plan-details{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
 }
