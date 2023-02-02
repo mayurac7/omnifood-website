@@ -1,0 +1,42 @@
+/* rem and em do not depend on html font size in media querries! */
+/* 1rem = 1em = 16px */
+
+
+/* Below 1110 px */
+@media (max-width: 64rem){
+    .hero{
+        max-width: 93rem;
+        
+    }
+    .heading-primary{
+        font-size: 3.4rem;
+    }
+    .gallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .header{
+        padding: 0 4rem;
+    }
+}
+/* Below 900 rem  */
+@media (max-width:56rem) {
+    html{
+        font-size: 54.25%;
+    }
+    .heading-secondary{
+        font-size: 3rem;
+    }
+    .heading-tertiary{
+        font-size: 2rem;
+    }
+    .grid{
+        row-gap: 4rem;
+        column-gap: 3.4rem;
+    }
+    .hero{
+        gap: 4rem;
+    }
+    .header{
+        padding: 0 4rem;
+    }
+}
