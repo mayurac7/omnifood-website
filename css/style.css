@@ -6,6 +6,7 @@
 
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body{
@@ -13,6 +14,7 @@ body{
     line-height: 1;
     font-weight: 400;
     color: #555;
+    overflow-x: hidden;
 }
 
 .hero{
@@ -88,7 +90,7 @@ body{
     margin-right: 1.2rem !important;
 }
 
-.dlivered-meals{
+.delivered-meals{
     display: flex;
     align-items: center;
     gap: 1.3rem;
@@ -131,6 +133,7 @@ body{
     background-color: #fdf2e9;
     height: 6.5rem;
     padding: 0 4rem;
+    position: relative;
 }
 
 .logo{
@@ -140,7 +143,7 @@ body{
 .main-nav-list{
     list-style: none;
     display: flex;
-    gap: 2.5rem;
+    gap: 3.5rem;
     align-items: center;
 }
 
@@ -173,8 +176,25 @@ body{
     background-color: #cf711f;
 }
 
+.btn-mobile-nav{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-mobile-nav{
+    height: 4rem;
+    width: 4rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"]{
+    display: none;
+}
+
 .container{
-    max-width: 120rem;
+    max-width: 110rem;
     padding: 0 3.2rem;
     margin: 0 auto;
 }
@@ -373,7 +393,7 @@ strong{
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.4s;
-    width: 90%;
+    width: 100%;
 }
 
 .meal-content{
@@ -410,6 +430,7 @@ strong{
     display: flex;
     align-items: center;
     gap: 1rem;
+    line-height: 1.2;
 }
 
 .margin-bottom-md{
